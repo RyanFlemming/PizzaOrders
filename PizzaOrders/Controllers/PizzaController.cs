@@ -17,10 +17,10 @@ namespace PizzaOrders.Controllers
         }
          */
 
-        [HttpPost]
-        public ActionResult Create()
-        {
+        //[HttpPost]
+        //public ActionResult Create()
+        //{
 
-        }
+        //}
 	}
 }

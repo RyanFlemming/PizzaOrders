@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BuyerController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PizzaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -167,6 +168,10 @@
     <Compile Include="Migrations\201605200437473_InitialCreate.cs" />
     <Compile Include="Migrations\201605200437473_InitialCreate.Designer.cs">
       <DependentUpon>201605200437473_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605300514249_AddedQtyToOrder.cs" />
+    <Compile Include="Migrations\201605300514249_AddedQtyToOrder.Designer.cs">
+      <DependentUpon>201605300514249_AddedQtyToOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -227,6 +232,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Orders\" />
     <Folder Include="Views\Pizza\" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +245,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605200437473_InitialCreate.resx">
       <DependentUpon>201605200437473_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605300514249_AddedQtyToOrder.resx">
+      <DependentUpon>201605300514249_AddedQtyToOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
