@@ -18,7 +18,6 @@ namespace PizzaOrders.Models
             Mushroom = 1,
             Olives = 2,
             Pepperoni = 3
-
         };
 
     }

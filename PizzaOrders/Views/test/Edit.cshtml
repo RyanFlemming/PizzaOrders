@@ -1,4 +1,4 @@
-﻿@model PizzaOrders.Models.Order
+﻿@model PizzaOrders.Models.Buyer
 
 @{
     ViewBag.Title = "Edit";
@@ -12,16 +12,24 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Order</h4>
+        <h4>Buyer</h4>
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.Id)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RestaurantId, "RestaurantId", new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("RestaurantId", String.Empty)
-                @Html.ValidationMessageFor(model => model.RestaurantId)
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
             </div>
         </div>
 

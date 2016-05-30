@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PizzaOrders.Models.Buyer">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAECAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Models\Buyer.cs</FileName>
@@ -11,7 +11,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="PizzaOrders.Models.Order">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="4.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAA=</HashCode>
       <FileName>Models\Order.cs</FileName>
@@ -24,12 +24,12 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="PizzaOrders.Models.Pizza">
-    <Position X="4" Y="4.75" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Enum Name="PizzaOrders.Models.Pizza.Toppings" Collapsed="true">
+      <Enum Name="PizzaOrders.Models.Pizza.Toppings">
         <TypeIdentifier>
           <NewMemberFileName>Models\Pizza.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -41,7 +41,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PizzaOrders.Models.Restaurant">
-    <Position X="7.75" Y="1.5" Width="1.5" />
+    <Position X="8.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Restaurant.cs</FileName>

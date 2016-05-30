@@ -9,10 +9,11 @@ namespace PizzaOrders.Models
 {
     public class PizzaOrdersDbContext : DbContext
     {
+
+        // Using Entity Framework convention to create the connection string
         public PizzaOrdersDbContext()
             : base("PizzaOrdersDb")
         {
-
         }
 
         public DbSet<Buyer> Buyers { get; set; }

@@ -9,6 +9,7 @@ namespace PizzaOrders.Models
     {
         public Order()
         {
+            // Prevent null reference exception
             Pizzas = new List<Pizza>();
         }
 
