@@ -15,7 +15,7 @@ namespace PizzaOrders
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "{controller}/{action}/{Id}",
                 // Default start page
                 defaults: new { controller = "Buyer", action = "Create", id = UrlParameter.Optional }
             );

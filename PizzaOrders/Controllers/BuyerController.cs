@@ -25,13 +25,11 @@ namespace PizzaOrders.Controllers
             {
                 db.Buyers.Add(buyer);
                 db.SaveChanges();
-                return RedirectToAction("Create", "Pizza");
+                Session["buyer"] = buyer;
+                return RedirectToAction("Create", "Orders");
             }
-
             return View(buyer);
         }
-
-
 
         // House cleaning just to be safe
         protected override void Dispose(bool disposing)

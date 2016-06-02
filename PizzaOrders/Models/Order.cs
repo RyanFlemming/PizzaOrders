@@ -14,6 +14,7 @@ namespace PizzaOrders.Models
         }
 
         public int Id { get; set; }
+        public int BuyerId { get; set; }
         public int RestaurantId { get; set; }
         public virtual Restaurant Restaurant { get; set; }
         public List<Pizza> Pizzas { get; set; }

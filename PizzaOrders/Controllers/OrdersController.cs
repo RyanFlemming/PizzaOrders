@@ -27,11 +27,27 @@ namespace PizzaOrders.Controllers
         }
 
 
-        // TO DO
         [HttpPost]
         public ActionResult Create(Order order)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                Buyer buyer = Session["buyer"] as Buyer;
+                order.BuyerId = buyer.Id;
+                db.Orders.Add(order);
+                db.SaveChanges();
+            }
+            return View(order);
+        }
+
+        // House cleaning just to be safe
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
 
 	}
