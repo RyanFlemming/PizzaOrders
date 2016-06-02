@@ -25,8 +25,7 @@ namespace PizzaOrders.Controllers
             {
                 db.Buyers.Add(buyer);
                 db.SaveChanges();
-                Session["buyer"] = buyer;
-                return RedirectToAction("Create", "Orders");
+                return RedirectToAction("Create", "Orders", new { id=buyer.Id});
             }
             return View(buyer);
         }

@@ -37,7 +37,12 @@
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </div>
-        
+
+        @*
+            Hidden element for passing our BuyerId
+            Placed here to prevent users with screen readers from modifying
+        *@
+        @Html.HiddenFor(model => model.BuyerId)
     </div>
 }
 

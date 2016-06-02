@@ -21,9 +21,11 @@ namespace PizzaOrders.Controllers
 
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(int id)
         {
-            return View();
+            Order order = new Order();
+            order.BuyerId = id;
+            return View(order);
         }
 
 
@@ -32,8 +34,6 @@ namespace PizzaOrders.Controllers
         {
             if (ModelState.IsValid)
             {
-                Buyer buyer = Session["buyer"] as Buyer;
-                order.BuyerId = buyer.Id;
                 db.Orders.Add(order);
                 db.SaveChanges();
             }
